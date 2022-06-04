@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container - Align Items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: aquamarine;
+            margin: 5px;
+            color: gray;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Center</h1>
+    <section class="container center flex">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+    
+    <h1>Stretch</h1>
+    <section class="container stretch flex">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+    
+    <h1>Start</h1>
+    <section class="container flex start">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+    
+    <h1>End</h1>
+    <section class="container flex end">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+    
+    <h1>Base Line</h1>
+    <section class="container flex baseline">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.<br><br></div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+
+    <h1>Column End</h1>
+    <section class="container flex end column">
+        <div class="item">Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+
+    <h1>Column Center</h1>
+    <section class="container flex central center column">
+        <div class="item">Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed sapien arcu. Suspendisse sed nunc et nulla eleifend gravida. Ut luctus ipsum non nisi maximus commodo.</div>
+    </section>
+    
+</body>
+</html>

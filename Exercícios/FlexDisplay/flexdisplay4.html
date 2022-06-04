@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container - Justify Content</title>
+    <style>
+        .container{
+            max-width: 300px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+        }
+        .item{
+            background-color: aquamarine;
+            margin: 5px;
+            text-align: center;
+            color: grey;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .flex-center{
+            justify-content: center;
+        }
+        .flex-spaceb{
+            justify-content: space-between;
+        }
+        .flex-spacea{
+            justify-content: space-around;
+        }
+        .flex-spacea{
+            justify-content: space-around;
+        }
+        .flex-start-colum{
+            flex-direction: column;
+            justify-content: start;
+            min-height: 200px;
+        }
+        .flex-end-colum{
+            flex-direction: column;
+            justify-content: end;
+            min-height: 200px;
+        }
+        .flex-center-colum{
+            flex-direction: column;
+            justify-content: center;
+            min-height: 200px;
+        }
+        .flex-between-colum{
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+        .flex-around-colum{
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Justify Start</h1>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+
+    <h1>Flex Justify End</h1>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Center</h1>
+    <section class="container flex-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Space Between</h1>
+    <section class="container flex-spaceb">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Space Around</h1>
+    <section class="container flex-spacea">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+    
+
+    <h1>Flex Justify Colum Start</h1>
+    <section class="container flex-start-colum">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Colum End</h1>
+    <section class="container flex-end-colum">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Colum Center</h1>
+    <section class="container flex-center-colum">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Colum Between</h1>
+    <section class="container flex-between-colum">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>Flex Justify Colum Around</h1>
+    <section class="container flex-around-colum">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+    
+</body>
+</html>
